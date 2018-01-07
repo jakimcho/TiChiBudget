@@ -1,0 +1,11 @@
+{
+  "name": "tichi-budget",
+  "version": "1.0.0",
+  "description": "Budget program for Yakim and Ani",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Yakim Rachev",
+  "license": "ISC"
+}
