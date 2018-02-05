@@ -11,8 +11,10 @@
   "author": "Yakim Rachev",
   "license": "ISC",
   "dependencies": {
+    "mongoose": "^5.0.1",
     "react": "^16.2.0",
-    "react-dom": "^16.2.0"
+    "react-dom": "^16.2.0",
+    "request": "^2.83.0"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
@@ -22,6 +24,7 @@
     "express": "^4.16.2",
     "html-loader": "^0.5.4",
     "html-webpack-plugin": "^2.30.1",
+    "nodemon": "^1.14.11",
     "prop-types": "^15.6.0",
     "webpack": "^3.10.0",
     "webpack-dev-middleware": "^2.0.4"

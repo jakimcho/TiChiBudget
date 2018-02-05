@@ -1,6 +1,7 @@
 import React from 'react';
-import User from '../model/User'
-import UserView from './presentational/UserView'
+import User from '../models/Person';
+import UserView from './presentational/UserView';
+import { request } from 'request';
 
 class App extends React.Component {
   constructor(props) {
@@ -12,16 +13,16 @@ class App extends React.Component {
 
   render() {
     let message = this.state.message;
-    let user1 = new User("Gosho", "HellFire");
-    let user2 = new User("Mitko", "HellFire");
-    user1.firstName = "Ot pochivka";
+    let users = userController.listAllUsers();
+
+    request()
 
     return (
       <div className="component-app">
         <h1>{message}</h1>
 
-        <UserView user={user1} />
-        <UserView user={user2} />
+        <UserView user={users[0]} />
+        <UserView user={users[1]} />
       </div>
     );
   }
